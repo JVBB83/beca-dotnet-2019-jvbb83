@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola mundo.");
+            Console.WriteLine("Mensaje de bienvenida de la ConsoleApp de JVBB83");
         }
     }
 }
