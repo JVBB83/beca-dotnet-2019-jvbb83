@@ -14,20 +14,29 @@
         {
             this.ID = 0;
             this.eType = v;
-            this.chassis.SetID(0);
+            this.chassis = new Chassis();
             this.bodywork = new Bodywork();
             this.engine = new Engine();
 
             if (this.eType == VehicleType.Motorcycle)
             {
-                this.wheels = new Wheel[2];
+                this.wheels = new Wheel[]
+                {
+                    new Wheel(),
+                    new Wheel(),
+                };
                 this.doors = null;
             }
             else if (this.eType == VehicleType.Quad)
             {
-                this.wheels = new Wheel[4];
+                this.wheels = new Wheel[]
+                {
+                    new Wheel(),
+                    new Wheel(),
+                    new Wheel(),
+                    new Wheel(),
+                };
                 this.doors = null;
-
             }
         }
 
