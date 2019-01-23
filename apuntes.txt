@@ -1,0 +1,25 @@
+Operador ternario
+	-ejemplo
+	int x = vector.length > 100 ? 20 : 34;
+	
+	if (vector.length > 100)
+	{
+		x=20;
+	}
+	else
+	{
+		x=34;
+	}
+	
+	-ejemplo 2;
+	string[] preparedArgs = args ?? new string[0];
+	si prepareArgs no tiene elementos entonces se iguala a new string[0], pero si tiene, entonces devuelve args.
+	
+	if (args != null)
+	{
+		args = args;
+	}
+	else
+	{
+		args = new string[0];
+	}
