@@ -23,3 +23,12 @@ Operador ternario
 	{
 		args = new string[0];
 	}
+	
+	
+LISTAS
+
+	List<Point4D> pointslist = new List<Point4D>();
+	pointsList.Add(somepoint);
+	pointsList.Remove(somepoint);
+	
+	pointsList.Clear();
