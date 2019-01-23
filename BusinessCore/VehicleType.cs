@@ -1,6 +1,6 @@
 ﻿namespace BusinessCore
 {
-    enum VehicleType
+    public enum VehicleType
     {
         Car,
         Motorcycle,
@@ -9,6 +9,10 @@
         Bus,
         Van,
     };
+
+   
+
+
 
 
 

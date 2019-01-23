@@ -8,7 +8,7 @@ namespace ConsoleApp
         {
             Vehicle vehiculo = new Vehicle(VehicleType.Car);
 
-            Engine motor;
+            
 
         }
     }
