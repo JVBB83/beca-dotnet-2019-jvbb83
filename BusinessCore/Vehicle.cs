@@ -1,4 +1,6 @@
-﻿namespace BusinessCore
+﻿using System.Collections.Generic;
+
+namespace BusinessCore
 {
     public class Vehicle
     {
@@ -7,8 +9,8 @@
         private Chassis chassis;
         private Bodywork bodywork;
         private Engine engine;
-        private Wheel[] wheels;
-        private Door[] doors;
+        private List<Wheel> wheels;
+        private List<Door> doors;
 
         public Vehicle(VehicleType v)
         {
@@ -20,22 +22,14 @@
 
             if (this.eType == VehicleType.Motorcycle)
             {
-                this.wheels = new Wheel[]
-                {
-                    new Wheel(),
-                    new Wheel(),
-                };
+                this.wheels = new List<Wheel>();
+                wheels.Add(new Wheel());
+                wheels.Add(new Wheel());
                 this.doors = null;
             }
             else if (this.eType == VehicleType.Quad)
             {
-                this.wheels = new Wheel[]
-                {
-                    new Wheel(),
-                    new Wheel(),
-                    new Wheel(),
-                    new Wheel(),
-                };
+                this.wheels = new List<Wheel>();
                 this.doors = null;
             }
         }
